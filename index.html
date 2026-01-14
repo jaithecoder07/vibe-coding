@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makar Sankranti Celebrations | ITM University</title>
+    <meta name="description"
+        content="Celebrating the harvest festival across India with ITM University. Explore Makar Sankranti, Pongal, Lohri, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="itm-text">ITM</span> University
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#celebrations">Celebrations</a></li>
+                <li><a href="#map">India Map</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-bg-elements">
+            <!-- Decorative floating elements will go here -->
+        </div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Celebrating the <span class="highlight">Harvest</span></h1>
+            <p class="hero-subtitle">One Sun, Many Names. Join ITM University in celebrating the spirit of Makar
+                Sankranti across India.</p>
+            <a href="#map" class="cta-button">Explore Traditions</a>
+        </div>
+    </header>
+
+    <section id="map" class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>United by Culture</h2>
+                <p>Discover how different states celebrate the harvest season.</p>
+            </div>
+            <div class="map-container-wrapper">
+                <div class="map-interactive" id="india-map">
+                    <img src="assets/images/india-map-bg.png" alt="India Map" class="map-bg-image">
+                    <svg class="map-overlay-svg" viewBox="0 0 500 600" preserveAspectRatio="xMidYMid meet">
+                        <!-- Pins for locations (approximate coordinates relative to 500x600 box) -->
+
+                        <!-- Gujarat (Uttarayan) -->
+                        <g class="map-pin-group" data-festival="uttarayan" transform="translate(110, 280)">
+                            <circle class="pulsating-circle" cx="0" cy="0" r="10" />
+                            <circle class="map-pin" cx="0" cy="0" r="8" />
+                        </g>
+
+                        <!-- Punjab (Lohri) -->
+                        <g class="map-pin-group" data-festival="lohri" transform="translate(160, 120)">
+                            <circle class="pulsating-circle" cx="0" cy="0" r="10" />
+                            <circle class="map-pin" cx="0" cy="0" r="8" />
+                        </g>
+
+                        <!-- Tamil Nadu (Pongal) -->
+                        <g class="map-pin-group" data-festival="pongal" transform="translate(220, 520)">
+                            <circle class="pulsating-circle" cx="0" cy="0" r="10" />
+                            <circle class="map-pin" cx="0" cy="0" r="8" />
+                        </g>
+
+                        <!-- Assam (Bihu) -->
+                        <g class="map-pin-group" data-festival="bihu" transform="translate(420, 220)">
+                            <circle class="pulsating-circle" cx="0" cy="0" r="10" />
+                            <circle class="map-pin" cx="0" cy="0" r="8" />
+                        </g>
+
+                        <!-- West Bengal (Poush Sankranti) -->
+                        <g class="map-pin-group" data-festival="west-bengal" transform="translate(340, 280)">
+                            <circle class="pulsating-circle" cx="0" cy="0" r="10" />
+                            <circle class="map-pin" cx="0" cy="0" r="8" />
+                        </g>
+
+                        <!-- Maharashtra (Makar Sankranti) -->
+                        <g class="map-pin-group" data-festival="maharashtra" transform="translate(160, 360)">
+                            <circle class="pulsating-circle" cx="0" cy="0" r="10" />
+                            <circle class="map-pin" cx="0" cy="0" r="8" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="festival-info-panel" id="info-panel">
+                    <h3>Select a Region</h3>
+                    <p style="margin-bottom: 1rem; color: var(--color-text-light);">Click on a highlighted location on
+                        the map to discover its unique traditions.</p>
+                    <div id="dynamic-content">
+                        <!-- Content will load here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="celebrations" class="festivals-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Festival Highlights</h2>
+            </div>
+            <div class="festival-grid">
+                <!-- Cards will be dynamically added or static html -->
+                <article class="festival-card card-uttarayan">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Uttarayan</h3>
+                        <span class="region">Gujarat</span>
+                        <p>The sky comes alive with colorful kites as people compete in friendly battles.</p>
+                    </div>
+                </article>
+                <article class="festival-card card-lohri">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Lohri</h3>
+                        <span class="region">Punjab</span>
+                        <p>Bonfires, bhangra, and popcorn mark the end of winter and the harvest of rabi crops.</p>
+                    </div>
+                </article>
+                <article class="festival-card card-pongal">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Pongal</h3>
+                        <span class="region">Tamil Nadu</span>
+                        <p>Boiling fresh milk and rice in earthen pots to thank the Sun God.</p>
+                    </div>
+                </article>
+                <article class="festival-card card-bihu">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Bihu</h3>
+                        <span class="region">Assam</span>
+                        <p>Traditional Bihu dance, feast, and buffalo fights mark the harvest cheer.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 ITM University. diverse traditions, one spirit.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
